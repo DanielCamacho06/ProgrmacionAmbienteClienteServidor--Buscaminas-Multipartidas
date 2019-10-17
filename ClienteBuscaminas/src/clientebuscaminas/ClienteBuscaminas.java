@@ -133,7 +133,7 @@ public class ClienteBuscaminas implements ActionListener,MouseListener,WindowLis
     }
     private void run() throws IOException{
         try{
-            socket = new Socket("192.168.1.104",2001);
+            socket = new Socket("127.0.0.1",2001);
             in = new Scanner(socket.getInputStream());
             out = new PrintWriter(socket.getOutputStream(), true);
             pantallaInicial();
